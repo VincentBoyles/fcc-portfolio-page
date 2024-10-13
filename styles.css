@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#navbar {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    font-size: large;
+    background-color: rgb(202, 62, 62);
+    padding: 20px;
+    padding-right: 50px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: larger;
+}
+
+li a:hover {
+    color: lightgray;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgb(70, 76, 85);
+    padding-top: 80px; 
+}
+
+.welcome-header {
+    font-size: 60px;
+    color: white;
+}
+
+p {
+    font-style: italic;
+    color: rgb(202, 62, 62);
+    font-size: x-large;
+}
+
+#projects {
+    background-color: cadetblue;
+    padding: 100px 20px; 
+}
+
+.project-tile {
+    text-align: center;
+    font-size: 50px;
+}
+
+.project-list {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+#profile-tile {
+    background-color: lightgray;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.profile-header {
+    text-align: center;
+    font-size: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(70, 76, 85);
+}
+
+.footer-class {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    li a {
+        font-size: medium;
+    }
+
+    .welcome-header {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .project-header, .profile-header {
+        font-size: 40px;
+    }
+
+    .project-list {
+        gap: 10px;
+    }
+}   
